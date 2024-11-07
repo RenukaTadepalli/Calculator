@@ -1,0 +1,103 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: rgb(213, 224, 20); */
+  
+   
+}
+.container{
+    background-color: black;
+    width: 45%;
+    height: 45vh;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px black;  
+  }
+.input .screen{
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 94%;
+    height: 60px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    text-align: right;
+    border-radius: 6px;
+    padding-right: 0.6 em;
+    box-shadow: 0 0 10px white;
+}
+.btns{
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.btns .rows .button{
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    margin-right: 20PX;
+    border-radius: 4PX;
+    box-shadow: 0 0 5PX white;
+
+}
+@media only screen and (max-width: 768px) {
+    .container {
+      width: 95%;
+      height: 70vh;
+    }
+    .input .screen {
+      font-size: 6vw;
+    }
+    .btns .rows .button {
+      width: 50%;
+      font-size: 5vw;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .container {
+      width: 98%;
+     height: 75h;
+    }
+    .input .screen {
+      font-size: 7vw;
+    }
+    .btns .rows {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 100vh;
+      }
+      .btns .rows .button {
+        margin: 5px;
+        width: calc(33.33% - 10px);
+        box-sizing: border-box;
+      }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .container {
+      width: 99%;
+      height: 90vh;
+    }
+    .input .screen {
+      font-size: 8vw;
+    }
+    .btns .rows .button {
+      width: 70%;
+      font-size: 7vw;
+    }
+  }
+  
